@@ -7,9 +7,12 @@
     "email": "javaldez1642qc@student.fatima.edu.ph"
   },
   "scripts": {
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "lint:css": "stylelint --fix css/*.css"
   },
   "devDependencies": {
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "stylelint": "^16.5.0",
+    "stylelint-config-recess-order": "^5.0.1"
   }
 }
