@@ -1,9 +1,9 @@
 .container {
   max-width: 1280px;
-  margin-right: auto;
-  margin-left: auto;
   padding-right: 1rem;
   padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .section:not(.hero) {
@@ -22,25 +22,25 @@
   left: 0;
   z-index: 9999;
   width: 100%;
-  background-color: darkgreen;
-  color: white;
   min-height: var(--header-height);
+  color: white;
+  background-color: darkgreen;
 }
 
 .header-nav {
   display: flex;
+  gap: 1rem;
   align-items: center;
   justify-content: space-between;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  gap: 1rem;
 }
 
 .header-nav > div {
   display: none;
+  gap: 1.5rem;
   align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
 }
 
 .header-logo {
@@ -73,16 +73,16 @@
 }
 
 .sub-heading {
+  margin-bottom: 0.25rem;
   font-size: 0.875rem;
-  color: darkgreen;
   font-weight: 500;
   line-height: 1.25rem;
-  margin-bottom: 0.25rem;
+  color: darkgreen;
 }
 
 .supporting-text {
-  font-size: 1.125rem;
   margin-top: 0.5rem;
+  font-size: 1.125rem;
   color: darkslategray;
 }
 
@@ -112,15 +112,15 @@
 
 .image-carousel .carousel {
   display: flex;
-  align-items: center;
   flex-wrap: nowrap;
+  align-items: center;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 .image-carousel .carousel > div {
-  width: 100%;
   flex-shrink: 0;
+  width: 100%;
 }
 
 .image-carousel img {
@@ -130,10 +130,10 @@
 
 .carousel-buttons {
   display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
 }
 
 .carousel-buttons:is(.thumbnails) {
@@ -150,14 +150,14 @@
 .carousel-button-right {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 4rem;
   height: 4rem;
   background-color: white;
-  display: flex;
-  align-items: center;
   border-radius: 9999px;
-  justify-content: center;
+  transform: translateY(-50%);
 }
 
 .carousel-button-left {
@@ -170,8 +170,8 @@
 
 .alternate-grid {
   display: grid;
-  gap: 2rem;
   grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
 }
 
 .program-offerings .carousel {
@@ -182,8 +182,8 @@
 
 .contact-information {
   display: grid;
-  gap: 1rem;
   grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
 }
 
 .contact-information > div {
@@ -193,8 +193,8 @@
 }
 
 .contact-information h3 {
-  font-weight: 600;
   font-size: 1.125rem;
+  font-weight: 600;
   line-height: 1.75rem;
 }
 
@@ -273,15 +273,15 @@
 }
 
 .header-mobile-menu {
-  display: none;
   position: absolute;
-  background-color: darkgreen;
-  color: white;
-  padding: 0.5rem 0.75rem;
-  border-radius: 0.5rem;
-  min-width: 320px;
   right: 0;
+  display: none;
+  min-width: 320px;
+  padding: 0.5rem 0.75rem;
   margin-top: 1rem;
+  color: white;
+  background-color: darkgreen;
+  border-radius: 0.5rem;
 }
 
 .header-mobile-menu > nav {
