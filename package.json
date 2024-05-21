@@ -1,0 +1,15 @@
+{
+  "name": "it-olympics-2024",
+  "version": "1.0.0",
+  "private": true,
+  "author": {
+    "name": "John Joaquin A. Valdez",
+    "email": "javaldez1642qc@student.fatima.edu.ph"
+  },
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  }
+}

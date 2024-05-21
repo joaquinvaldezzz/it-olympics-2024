@@ -1,0 +1,293 @@
+.container {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.section:not(.hero) {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.section:is(.hero) {
+  padding-top: var(--header-height);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  background-color: darkgreen;
+  color: white;
+  min-height: var(--header-height);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  gap: 1rem;
+}
+
+.header-nav > div {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo img {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+  border-radius: 9999px;
+}
+
+.header-button {
+  color: white;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 2.75rem;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.25rem;
+}
+
+.sub-heading {
+  font-size: 0.875rem;
+  color: darkgreen;
+  font-weight: 500;
+  line-height: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.supporting-text {
+  font-size: 1.125rem;
+  margin-top: 0.5rem;
+  color: darkslategray;
+}
+
+.paragraph {
+  max-width: 768px;
+}
+
+.text {
+  color: rgb(22, 22, 22);
+}
+
+.typography p {
+  max-width: 768px;
+}
+
+.typography > * + * {
+  margin-top: 1rem;
+}
+
+.core-values {
+  color: darkslategray;
+}
+
+.image-carousel {
+  position: relative;
+}
+
+.image-carousel .carousel {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.image-carousel .carousel > div {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.image-carousel img {
+  object-fit: cover;
+  scroll-padding-top: var(--header-height);
+}
+
+.carousel-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.carousel-buttons:is(.thumbnails) {
+  overflow-x: auto;
+}
+
+.carousel-buttons:is(.thumbnails) img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+}
+
+.carousel-button-left,
+.carousel-button-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4rem;
+  height: 4rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 9999px;
+  justify-content: center;
+}
+
+.carousel-button-left {
+  left: 1rem;
+}
+
+.carousel-button-right {
+  right: 1rem;
+}
+
+.alternate-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.program-offerings .carousel {
+  max-width: 480px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contact-information {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.contact-information > div {
+  padding: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+}
+
+.contact-information h3 {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.university-logo {
+  width: 16rem;
+  height: 16rem;
+  object-fit: contain;
+}
+
+.texts {
+  color: darkslategrey;
+}
+
+.texts > * + * {
+  margin-top: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .section:not(.hero) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .contact-information {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-nav > div {
+    display: flex;
+  }
+
+  .header-button {
+    display: none;
+  }
+
+  .header-nav {
+    justify-content: center;
+  }
+
+  .contact-information {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .contact-information {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.header-button-input {
+  appearance: none;
+}
+
+.header-button-input:checked ~ .header-mobile-menu {
+  display: block;
+}
+
+.header-mobile-menu {
+  display: none;
+  position: absolute;
+  background-color: darkgreen;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  min-width: 320px;
+  right: 0;
+  margin-top: 1rem;
+}
+
+.header-mobile-menu > nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: start;
+  font-size: 0.875rem;
+}
