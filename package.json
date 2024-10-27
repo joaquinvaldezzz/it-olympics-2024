@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "prettier": "^3.2.5",
+    "prettier-plugin-organize-attributes": "^1.0.0",
     "stylelint": "^16.5.0",
     "stylelint-config-recess-order": "^5.0.1"
   }
